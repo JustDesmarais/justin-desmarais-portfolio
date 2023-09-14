@@ -50,20 +50,24 @@ p {
     font-size: 16px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 main section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     flex: 1 1 30%;
 }
 
 main section h2 {
     border-right-style: solid;
     border-color: var(--accent-yellow);
-    width: 20%;
-    height: 100%;
+    min-width: 200px;
     text-align: right;
     padding: 10px 15px 30px;
-    margin: 10px;
+    margin: 10px 10px;
     color: var(--dark);
 }
 
@@ -76,12 +80,19 @@ main section h2 {
     background-position: center;
 }
 
+.description {
+    display: block;
+}
+
 .first-project {
+    background-image: url("../assets/Images/Project1.jpg");
+    background-size: contain;
     border: 2px solid var(--main-yellow);
     margin: 10px;
     width: 75%;
     padding: 80px 50px 20px 0px;
     float: right;
+    flex: 1 1 30%;
 }
 
 .later-projects {
