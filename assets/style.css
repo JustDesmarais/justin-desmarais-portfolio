@@ -14,6 +14,7 @@
 
 body {
     background-color: var(--off-yellow);
+    color: var(--dark)
 }
 
 header {
@@ -28,6 +29,7 @@ header {
 header h1 {
     font-size: 54px;
     margin-left: 5%;
+    align-self: center; 
 }
 
 header nav {
@@ -82,10 +84,10 @@ section h2 {
 }
 
 .hero {
-    height: 800px;
+    height: 300px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-image: url("../assets/Images/Hero.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -123,12 +125,23 @@ section h2 {
     width: 95%;
     background-image: url(../assets/Images/CSS.jpg);
     background-size: cover;
+    background-position: center;
     border: 4px solid var(--accent-yellow);
     margin: 10px 0px 10px 5px;
     height: 400px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
+.proj-1:hover, .proj-1:hover .proj-1 p {
+    box-shadow: inset 0px 0px 10px 
+    var(--main-yellow);
+}
+
+.proj-1 div a{
+    height: 100%;
+    width: 100%;
+}
 .proj-1 h3 {
     background-color: var(--accent-yellow);
     width: 30%;
@@ -151,56 +164,67 @@ section h2 {
     margin: 10px 0px 10px 5px;
 }
 
+.later-projects div:hover {
+    box-shadow: inset 0px 0px 10px 
+    var(--main-yellow);
+}
+
 .card1 {
     background-image: url(../assets/Images/mediaProd.jpg);
     background-size: cover;
+    background-position: center;
     width: 49%;
     height: 150px;
     border: 4px solid var(--accent-yellow);
     margin: 10px 0px 10px 0px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .card2 {
     background-image: url(../assets/Images/VideoTimeline.jpg);
     background-size: cover;
+    background-position: center;
     width: 49%;
     height: 150px;
     border: 4px solid var(--accent-yellow);
     margin: 10px 0px 10px 0px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .card3 {
     background-image: url(../assets/Images/Audio.jpg);
     background-size: cover;
+    background-position: center;
     width: 49%;
     height: 150px;
     border: 4px solid var(--accent-yellow);
     margin: 10px 0px 10px 0px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .card4 {
     background-image: url(../assets/Images/gameDev.jpg);
     background-size: cover;
+    background-position: center;    
     width: 49%;
     height: 150px;
     border: 4px solid var(--accent-yellow);
     margin: 10px 0px 10px 0px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 .later-projects div h3 {
     background-color: var(--accent-yellow);
-    width: 30%;
-    position: relative;
+    width: 40%;
 }
 
 .later-projects div p {
     background-color: var(--accent-yellow);
-    width: 30%;
-    position: relative;
+    width: 40%;
 }
 
 .links {
@@ -214,6 +238,8 @@ section h2 {
     margin: 10px;
     flex: 1 1;
     text-align: center;
+    color: var(--dark);
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 992px) {
@@ -230,9 +256,17 @@ section h2 {
     main section h2 {
         background-color: var(--main-yellow);
         text-align: center;
-        margin: 10px 0px;
+        margin: 0px 0px;
         border-bottom-style: solid;
+    }
 
+    .hero {
+        height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .text-boxes {
+        padding-left: 10px;
     }
 
     .proj-links {
@@ -249,6 +283,23 @@ section h2 {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        padding-top: 15px;
+        margin-right: 0%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    ul li {
+        font-size: 12px;
+        margin: 5px 0px;
+        text-align: center;
+    }
+
     .later-projects {
         display: block;
     }  
