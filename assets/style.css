@@ -12,6 +12,10 @@
     --dark: #404040;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--off-yellow);
     color: var(--dark)
@@ -41,8 +45,8 @@ header nav {
 }
 
 header img{
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     align-self: center;
 }
 
@@ -164,57 +168,51 @@ section h2 {
     margin: 10px 0px 10px 5px;
 }
 
+.later-projects div a {
+    height: 100%;
+    width: 100%;
+}
+
 .later-projects div:hover {
     box-shadow: inset 0px 0px 10px 
     var(--main-yellow);
 }
 
-.card1 {
+.card {
+    width: 49%;
+    height: 150px;
+    border: 4px solid var(--accent-yellow);
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#proj-2 {
     background-image: url(../assets/Images/mediaProd.jpg);
     background-size: cover;
     background-position: center;
-    width: 49%;
-    height: 150px;
-    border: 4px solid var(--accent-yellow);
-    margin: 10px 0px 10px 0px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    height: 100%;
 }
 
-.card2 {
+#proj-3 {
     background-image: url(../assets/Images/VideoTimeline.jpg);
     background-size: cover;
     background-position: center;
-    width: 49%;
-    height: 150px;
-    border: 4px solid var(--accent-yellow);
-    margin: 10px 0px 10px 0px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    height: 100%;
 }
 
-.card3 {
+#proj-4 {
     background-image: url(../assets/Images/Audio.jpg);
     background-size: cover;
     background-position: center;
-    width: 49%;
-    height: 150px;
-    border: 4px solid var(--accent-yellow);
-    margin: 10px 0px 10px 0px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    height: 100%;
 }
 
-.card4 {
+#proj-5 {
     background-image: url(../assets/Images/gameDev.jpg);
     background-size: cover;
-    background-position: center;    
-    width: 49%;
-    height: 150px;
-    border: 4px solid var(--accent-yellow);
-    margin: 10px 0px 10px 0px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    background-position: center; 
+    height: 100%;   
 }
 
 .later-projects div h3 {
